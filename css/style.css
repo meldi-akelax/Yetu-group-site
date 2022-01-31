@@ -120,16 +120,40 @@ a:focus {
     width: 100%;
     z-index: 100;
     color: white;
+    transition: all 0.3s ease-out;
 }
 
-.header_section span a,
-.header_section .nav-link,
-.header_section span {
-    color: #fff !important;
+.header_section.p-absolute span a,
+.header_section.p-absolute .nav-link,
+.header_section.p-absolute span,
+.header_section.p-absolute button {
+    color: #fff;
 }
 
-.header_section.p-fixed span a {
+.header_section.p-absolute .btn-1 {
+    background: none;
+    color: #a7ff9b !important;
+    border-color: #a7ff9b;
+}
+
+.header_section.p-fixed {
+    background: white;
+}
+
+.header_section.p-fixed span,
+.header_section .nav-link {
     color: #000000;
+}
+
+.navbar-collapse.show {
+    background: white;
+    color: #222;
+}
+
+.header_section .navbar-collapse.show,
+.header_section .navbar-collapse.show .nav-link {
+    background: white;
+    color: #222 !important;
 }
 
 .header_section .container-fluid {
@@ -145,18 +169,37 @@ a:focus {
 .navbar-brand span {
     font-weight: bold;
     font-size: 24px;
-    color: #000000;
 }
 
 .custom_nav-container {
-    padding: 10px 0;
+    padding: 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
     padding: 5px 20px;
-    color: #000000;
     text-align: center;
 }
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    margin: 0;
+}
+
+@media (min-width: 991px) {
+    #navbarSupportedContent {
+        flex-basis: initial !important;
+        flex-grow: unset !important;
+    }
+}
+
+
+/*  */
 
 .custom_nav-container .nav_search-btn {
     width: 35px;
@@ -288,7 +331,6 @@ a:focus {
     background: linear-gradient(to right, #297a1e00 50%, #39a82a00 70%), url(../images/mockup\ logo\ yetu\ group\ .jpg) no-repeat;
     background-size: cover;
     min-height: 100vh;
-    background-attachment: fixed;
 }
 
 .slider_section::before {
@@ -335,18 +377,18 @@ a:focus {
     text-align: center;
 }
 
-.slider_section .detail-box .btn-1 {
+.btn-1 {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #0f710e;
+    background-color: #38a82a;
     color: #ffffff;
     border-radius: 5px;
-    border: 1px solid #0f710e;
+    border: 1px solid #38a82a;
     -webkit-transition: all .3s;
     transition: all .3s;
 }
 
-.slider_section .detail-box .btn-1:hover {
+.btn-1:hover {
     background-color: transparent;
     color: #4E7F6A;
 }
