@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
     <!-- Basic -->
@@ -8,13 +8,14 @@
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Site Metas -->
-    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- <link rel="icon" href="images/fevicon.png" type="image/gif" /> -->
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
 
     <title>yetu group</title>
 
+    <link rel="icon" href="./images/logo/Yetu_groupe_logo.png" type="image/x-icon">
 
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -27,6 +28,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/base.css">
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
 
@@ -35,20 +37,20 @@
 <body>
 
     <!-- header section strats -->
-    <header class="header_section">
+    <header class="header_section p-absolute">
         <div class="container">
             <nav class="navbar navbar-expand-lg custom_nav-container ">
-                <a class="navbar-brand" href="index.html">
-                    <span>yetu group</span>
-                    <!-- <img style="width: 100px;" src="./images/logo/Yetu groupe logo .jpg" alt=""> -->
+                <a class="navbar-brand" style="display: flex; align-items: center;" href="index.html">
+                    <img style="height: 65px;" src="./images/logo/Yetu_groupe_logo.png" alt="">
+                    <span style="margin-top: 6px;">Yetu group</span>
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class=""> </span>
-        </button>
+                <span class=""> </span>
+                </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav  ml-auto">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
                         <li class="nav-item active">
                             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
@@ -56,15 +58,17 @@
                             <a class="nav-link" href="about.html"> A propos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="fruit.html">Nos Produits</a>
+                            <a class="nav-link" href="agriculture.html">Agriculture</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="blog.html">Galerie</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contactez-nous</a>
+                        <li class="nav-item ">
                         </li>
                     </ul>
+                </div>
+                <div class="d-lg-block" style="display: none;">
+                    <a class="btn-1" href="index.html#contact"><i class="fa fa-phone"></i> Contacts</a>
                 </div>
             </nav>
         </div>
@@ -74,17 +78,20 @@
     <!-- slider section -->
     <section class="slider_section ">
         <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
+            <div class="carousel-inner text-white">
+                <br><br>
+                <br><br>
+                <br><br><br>
                 <div class="carousel-item active">
                     <div class="container ">
-                        <div class="row">
+                        <div class="row align-items-center text-white">
                             <div class="col-md-6 col-lg-5">
-                                <div class="detail-box">
+                                <div class="detail-box text-white">
                                     <h1>
                                         Bienvenue sur <br> Yetu Group.
                                     </h1>
-                                    <p>Ensemble révolutionnons l'agriculture en RDC.</p>
-                                    <p>Nous créons plus de 1000 emplois en chaînes et participons au développement de la RDC.</p>
+                                    <p>Ensemble révolutionnons l'agriculture en RDC. <br> Nous créons plus de 1000 emplois en chaînes et participons au développement de la RDC.</p>
+                                    <br>
                                     <div class="btn-box">
                                         <a href="" class="btn-1">
                       En savoir plus
@@ -96,9 +103,9 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-7">
-                                <div class="img-box">
+                                <!-- <div class="img-box">
                                     <img src="images/slider-img.png" alt="">
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -112,7 +119,9 @@
                                         Notre vision
                                     </h1>
                                     <p>Nous avons l'enthousiasme de nourrir la ville Province de Kinshasa et de l'approvisionner en produits de consommation agricole. Yetu se veut être un poumon de ravitaillement en bien de consommation pour la ville de
-                                        Kinshasa.</p>
+                                        Kinshasa.
+                                    </p>
+                                    <br>
                                     <div class="btn-box">
                                         <a href="" class="btn-1">
                       En savoir plus
@@ -124,9 +133,6 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-7">
-                                <div class="img-box">
-                                    <img src="images/slider-img.png" alt="">
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -140,6 +146,38 @@
         </div>
     </section>
     <!-- end slider section -->
+
+
+    <!-- about section -->
+    <section class=" layout_padding">
+        <br>
+        <h2 class="text-center underline-top">
+            Qui sommes-nous ?
+        </h2>
+        <br><br>
+        <div class="container  ">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="detail-box">
+                        <div class="heading_container">
+                        </div>
+                        <h3>A propos</h3>
+                        <p>Nous sommes Yetu Group, une entreprise spécialisée dans la production et transformation des produits de consommation agricole. Nous investissons dans l'agriculture qui est un pilier fort pour le développement de la République Démocratique
+                            du Congo et contribuer favorable à l'atteinte de l'objectif de développement durable numéro 1 sur la lutte contre la faim.</p>
+                        <a href="">
+                  En savoir plus
+                </a>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="img-box">
+                        <img class="full-width" src="images/about-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about section -->
 
     <!-- about section -->
     <section class="about_section layout_padding">
@@ -734,8 +772,8 @@
                 <div class="info_logo">
                     <a class="navbar-brand" href="index.html">
                         <span>
-              yetu group
-            </span>
+                        Yetu group
+                        </span>
                     </a>
                 </div>
                 <div class="social-box">

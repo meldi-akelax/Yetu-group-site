@@ -26,7 +26,11 @@ h1 {
     font-family: "Montserrat-Bold", sans-serif;
 }
 
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Montserrat-Medium", sans-serif;
 }
 
@@ -37,6 +41,14 @@ a {
 
 header span {
     font-family: "Montserrat-Thin", sans-serif !important;
+}
+
+p {
+    height: 100%;
+}
+
+.text-bold {
+    font-family: "Montserrat-Bold", sans-serif;
 }
 
 .p-absolute {
@@ -53,6 +65,58 @@ header span {
 
 .full-width {
     width: 100%;
+}
+
+.background-colored {
+    background-color: #f2f7f3;
+}
+
+.card {
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: all 0.4s ease-out;
+}
+
+.border-radius {
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 0 50px 2px #c0cec2;
+}
+
+.custom-card {
+    margin: 10px 0;
+    padding: 14px;
+    text-align: center;
+    border-radius: 5px;
+    border: none !important;
+    margin-bottom: 30px;
+}
+
+.custom-card .icon {
+    font-size: 30px;
+    margin-top: -50px;
+    margin-bottom: 15px;
+}
+
+.custom-card i {
+    border-radius: 50%;
+    padding-top: 15px;
+    width: 60px;
+    height: 60px;
+    color: #0f710e;
+    background-color: #f2f7f3;
+}
+
+.custom-card h3 {
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.custom-card p {
+    font-size: 14px;
+    line-height: 100%;
 }
 
 .underline-top {
