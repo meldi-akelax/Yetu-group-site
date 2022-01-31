@@ -138,6 +138,7 @@ a:focus {
 
 .header_section.p-fixed {
     background: white;
+    box-shadow: 0 0 5px 1px rgba(20, 20, 20, 0.068);
 }
 
 .header_section.p-fixed span,
@@ -431,6 +432,14 @@ a:focus {
 .slider_section .carousel-indicators li.active {
     width: 25px;
     background-color: #4E7F6A;
+}
+
+.call_section {
+    height: 300px;
+    background: linear-gradient(to right, #00130bb4 50%, #0324028a 80%), url(../images/show/42890e1b-87d9-4810-b147-6cd960b43e30.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 .offer_section .row>div {
